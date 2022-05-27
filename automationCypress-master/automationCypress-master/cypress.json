@@ -1,0 +1,11 @@
+{
+  "projectId": "ouk63g",
+  "screenshotsFolder": "screenshots",
+  "videosFolder": "videos",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+}

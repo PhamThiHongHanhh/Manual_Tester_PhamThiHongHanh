@@ -1,0 +1,180 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-14T12:43:06.061Z",
+    "end": "2022-05-14T12:43:37.448Z",
+    "duration": 31387,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f3cbfda3-784d-427a-96f0-06f59b138a34",
+      "title": "",
+      "fullFile": "cypress\\integration\\sing-up\\index.spec.js",
+      "file": "cypress\\integration\\sing-up\\index.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+          "title": "Sign-up",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the map4d website and check register page",
+              "fullTitle": "Sign-up Visits the map4d website and check register page",
+              "timedOut": null,
+              "duration": 4214,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập').click();\ncy.contains('Register').click();\ncy.contains('Register');",
+              "err": {},
+              "uuid": "b5b1633f-3c93-4a3f-aa9c-57fc6f1aebd7",
+              "parentUUID": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check register page submit success",
+              "fullTitle": "Sign-up Visits the map4d website and check register page submit success",
+              "timedOut": null,
+              "duration": 7547,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập').click();\ncy.contains('Register').click();\ncy.xpath('//*[@id=\"firstName\"]').type('tun');\ncy.xpath('//*[@id=\"lastName\"]').type('dtrai');\ncy.xpath('//*[@id=\"email\"]').type(\"tundtrai\".concat(new Date().getSeconds(), \"@gmail.com\"));\ncy.xpath('//*[@id=\"password\"]').type('TUNprocutephomaique123123!');\ncy.xpath('//*[@id=\"password-confirm\"]').type('TUNprocutephomaique123123!');\ncy.xpath('//*[@id=\"user.attributes.phone\"]').type('0123456789');\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[1]').click();\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[2]/div/div[1]').click();\ncy.contains('Register').click();\ncy.contains('You need to verify your email address to activate your account.');",
+              "err": {},
+              "uuid": "f9f1b187-d761-48f3-bd0e-d4b99c9c700e",
+              "parentUUID": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check register page submit false",
+              "fullTitle": "Sign-up Visits the map4d website and check register page submit false",
+              "timedOut": null,
+              "duration": 6610,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập').click();\ncy.contains('Register').click();\ncy.xpath('//*[@id=\"firstName\"]').type('tun');\ncy.xpath('//*[@id=\"lastName\"]').type('dtrai');\ncy.xpath('//*[@id=\"email\"]');\ncy.xpath('//*[@id=\"password\"]').type('TUNprocutephomaique123123!');\ncy.xpath('//*[@id=\"password-confirm\"]').type('TUNprocutephomaique123123!');\ncy.xpath('//*[@id=\"user.attributes.phone\"]').type('0123456789');\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[1]').click();\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[2]/div/div[1]').click();\ncy.contains('Register').click();\ncy.contains('Please specify email.');",
+              "err": {},
+              "uuid": "e3c0f9f5-a791-4dcb-914a-61f3c88e06f9",
+              "parentUUID": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check register page submit false",
+              "fullTitle": "Sign-up Visits the map4d website and check register page submit false",
+              "timedOut": null,
+              "duration": 4455,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập').click();\ncy.contains('Register').click();\ncy.xpath('//*[@id=\"firstName\"]').type('tun');\ncy.xpath('//*[@id=\"lastName\"]').type('dtrai');\ncy.xpath('//*[@id=\"email\"]');\ncy.xpath('//*[@id=\"password\"]');\ncy.xpath('//*[@id=\"password-confirm\"]');\ncy.xpath('//*[@id=\"user.attributes.phone\"]').type('0123456789');\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[1]').click();\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[2]/div/div[1]').click();\ncy.contains('Register').click();\ncy.contains('Please specify password.');",
+              "err": {},
+              "uuid": "9ddaa20f-f95e-45e6-8b8c-4a85a326d379",
+              "parentUUID": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check register page submit false",
+              "fullTitle": "Sign-up Visits the map4d website and check register page submit false",
+              "timedOut": null,
+              "duration": 6057,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập').click();\ncy.contains('Register').click();\ncy.xpath('//*[@id=\"firstName\"]').type('tun');\ncy.xpath('//*[@id=\"lastName\"]').type('dtrai');\ncy.xpath('//*[@id=\"email\"]').type('tundtrai@gmail.com');\ncy.xpath('//*[@id=\"password\"]').type('tun123456');\ncy.xpath('//*[@id=\"password-confirm\"]').type('tun123456');\ncy.xpath('//*[@id=\"user.attributes.phone\"]').type('0123456789');\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[1]').click();\ncy.xpath('//*[@id=\"kc-register-form\"]/div[7]/div[2]/div/div[2]/div/div[1]').click();\ncy.contains('Register').click();\ncy.contains('Please choose a stronger password. Try a mix of letters, numbers, and symbols.');",
+              "err": {},
+              "uuid": "6db68892-0c00-4cd9-9c5f-70dfe9026559",
+              "parentUUID": "c412b5d5-982e-4c69-bcee-ce02b8d93419",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b5b1633f-3c93-4a3f-aa9c-57fc6f1aebd7",
+            "f9f1b187-d761-48f3-bd0e-d4b99c9c700e",
+            "e3c0f9f5-a791-4dcb-914a-61f3c88e06f9",
+            "9ddaa20f-f95e-45e6-8b8c-4a85a326d379",
+            "6db68892-0c00-4cd9-9c5f-70dfe9026559"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 28883,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

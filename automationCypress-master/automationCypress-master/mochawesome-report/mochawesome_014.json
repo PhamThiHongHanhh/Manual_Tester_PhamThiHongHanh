@@ -1,0 +1,453 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 16,
+    "passes": 0,
+    "pending": 0,
+    "failures": 16,
+    "start": "2022-05-14T12:38:32.590Z",
+    "end": "2022-05-14T12:40:50.643Z",
+    "duration": 138053,
+    "testsRegistered": 16,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e9bdfb85-9be7-4bd5-a122-d68d33ff0f3b",
+      "title": "",
+      "fullFile": "cypress\\integration\\setting\\index.spec.js",
+      "file": "cypress\\integration\\setting\\index.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+          "title": "Setting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the map4d website and check setting",
+              "fullTitle": "Setting Visits the map4d website and check setting",
+              "timedOut": null,
+              "duration": 7327,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.contains('Tùy chọn hiển thị');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "513606fc-d71f-447d-acf6-43daeb3c7e75",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check auto button in weather",
+              "fullTitle": "Setting Visits the map4d website and check auto button in weather",
+              "timedOut": null,
+              "duration": 8954,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.get('div[aria-label=\"text alignment\"]').find('button[value=\"4\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "64b4a7cd-87f8-400a-9b0b-f41971c9b6fe",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check sun button in weather",
+              "fullTitle": "Setting Visits the map4d website and check sun button in weather",
+              "timedOut": null,
+              "duration": 8854,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.get('div[aria-label=\"text alignment\"]').find('button[value=\"2\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "64a4c10e-1ab1-4df0-9127-b6c240df4ff3",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check rain button in weather",
+              "fullTitle": "Setting Visits the map4d website and check rain button in weather",
+              "timedOut": null,
+              "duration": 6791,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.get('div[aria-label=\"text alignment\"]').find('button[value=\"0\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "6f63136b-f860-43a8-a55a-f217b7fd0a2b",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check snow button in weather",
+              "fullTitle": "Setting Visits the map4d website and check snow button in weather",
+              "timedOut": null,
+              "duration": 5929,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.get('div[aria-label=\"text alignment\"]').find('button[value=\"1\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "46aab721-1148-42bc-bf02-065cfe9193f7",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check auto button in time",
+              "fullTitle": "Setting Visits the map4d website and check auto button in time",
+              "timedOut": null,
+              "duration": 7004,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.get('img[src=\"/mapAppRoot/icon/settingEffectIcon/adjust.svg\"]').eq(1).click('center');\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "8eb7ad90-fc67-41cc-ac59-85c0ba5c4104",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check morning button in time",
+              "fullTitle": "Setting Visits the map4d website and check morning button in time",
+              "timedOut": null,
+              "duration": 6462,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[2]/div[3]').find('button[value=\"1\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "2b9bab8a-1588-4226-a7f4-365a64932927",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check lunch button in time",
+              "fullTitle": "Setting Visits the map4d website and check lunch button in time",
+              "timedOut": null,
+              "duration": 11187,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[2]/div[3]').find('button[value=\"2\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "f1a427aa-b86d-4512-b30a-7d417263776c",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check afternoon button in time",
+              "fullTitle": "Setting Visits the map4d website and check afternoon button in time",
+              "timedOut": null,
+              "duration": 9071,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[2]/div[3]').find('button[value=\"3\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "e8023005-74d3-4fd0-a44e-fcec86306dda",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check night button in time",
+              "fullTitle": "Setting Visits the map4d website and check night button in time",
+              "timedOut": null,
+              "duration": 9758,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[2]/div[3]').find('button[value=\"4\"]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "9dc44b90-7614-45e2-a824-5e51b1cf1f63",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check shadow",
+              "fullTitle": "Setting Visits the map4d website and check shadow",
+              "timedOut": null,
+              "duration": 12824,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/label[1]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "698cabbe-9afc-41a1-8dca-dff77548bffc",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check weather effect",
+              "fullTitle": "Setting Visits the map4d website and check weather effect",
+              "timedOut": null,
+              "duration": 7953,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/label[2]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "d70e4bc3-5ac4-4b01-8dd2-dffcc4033054",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check 3D model",
+              "fullTitle": "Setting Visits the map4d website and check 3D model",
+              "timedOut": null,
+              "duration": 7741,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/label[3]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "d489079e-0d14-46e1-8696-cc7ec6ed9013",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check walter effect",
+              "fullTitle": "Setting Visits the map4d website and check walter effect",
+              "timedOut": null,
+              "duration": 8341,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/label[4]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "af5239a6-c782-4391-86c9-0ded1f469106",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check POI",
+              "fullTitle": "Setting Visits the map4d website and check POI",
+              "timedOut": null,
+              "duration": 8662,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.xpath('/html/body/div[3]/div[3]/div/div[2]/div[3]/div/div/label[5]').click();\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "52407401-c35c-4bdc-a4f4-d977ec9b158c",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check close button",
+              "fullTitle": "Setting Visits the map4d website and check close button",
+              "timedOut": null,
+              "duration": 8164,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.get('.jss12').find('button.MuiButtonBase-root').eq(0).click('center');\ncy.get('ul[aria-label=\"Menu Setting\"]').find('div.jss475:nth-child(2)').eq(0).click('center');\ncy.contains(\"Đóng\").click();",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'div.jss475:nth-child(2)', but never found it. Queried from element: <ul.MuiList-root>\n    at cypressErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138644:9)\n    at throwErr (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138577:11)\n    at Object.throwErrByPath (https://map.map4d.vn/__cypress/runner/cypress_runner.js:138625:3)\n    at retry (https://map.map4d.vn/__cypress/runner/cypress_runner.js:132905:19)\n    at onFailFn (https://map.map4d.vn/__cypress/runner/cypress_runner.js:121122:16)\n    at tryCatcher (https://map.map4d.vn/__cypress/runner/cypress_runner.js:165465:23)\n    at Promise._settlePromiseFromHandler (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163401:31)\n    at Promise._settlePromise (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163458:18)\n    at Promise._settlePromise0 (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163503:10)\n    at Promise._settlePromises (https://map.map4d.vn/__cypress/runner/cypress_runner.js:163578:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160190:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160200:10)\n    at Async.drainQueues (https://map.map4d.vn/__cypress/runner/cypress_runner.js:160074:14)",
+                "diff": null
+              },
+              "uuid": "7ed96d7f-04e5-4121-8a46-dbb9b9a6f280",
+              "parentUUID": "4e6ba1d0-b5d5-4d18-a8a1-83735851bf3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "513606fc-d71f-447d-acf6-43daeb3c7e75",
+            "64b4a7cd-87f8-400a-9b0b-f41971c9b6fe",
+            "64a4c10e-1ab1-4df0-9127-b6c240df4ff3",
+            "6f63136b-f860-43a8-a55a-f217b7fd0a2b",
+            "46aab721-1148-42bc-bf02-065cfe9193f7",
+            "8eb7ad90-fc67-41cc-ac59-85c0ba5c4104",
+            "2b9bab8a-1588-4226-a7f4-365a64932927",
+            "f1a427aa-b86d-4512-b30a-7d417263776c",
+            "e8023005-74d3-4fd0-a44e-fcec86306dda",
+            "9dc44b90-7614-45e2-a824-5e51b1cf1f63",
+            "698cabbe-9afc-41a1-8dca-dff77548bffc",
+            "d70e4bc3-5ac4-4b01-8dd2-dffcc4033054",
+            "d489079e-0d14-46e1-8696-cc7ec6ed9013",
+            "af5239a6-c782-4391-86c9-0ded1f469106",
+            "52407401-c35c-4bdc-a4f4-d977ec9b158c",
+            "7ed96d7f-04e5-4121-8a46-dbb9b9a6f280"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 135022,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-01T15:35:47.291Z",
+    "end": "2022-05-01T15:36:25.596Z",
+    "duration": 38305,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "373cf703-e6ab-4b86-a28c-2e76a61ab13c",
+      "title": "",
+      "fullFile": "cypress\\integration\\search\\index.spec.js",
+      "file": "cypress\\integration\\search\\index.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+          "title": "Searching",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the map4d website and check it done",
+              "fullTitle": "Searching Visits the map4d website and check it done",
+              "timedOut": null,
+              "duration": 5609,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập');",
+              "err": {},
+              "uuid": "e8639159-d079-4d33-9605-2b451fd4b5c7",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check search '230 nguyễn công hoan'",
+              "fullTitle": "Searching Visits the map4d website and check search '230 nguyễn công hoan'",
+              "timedOut": null,
+              "duration": 7474,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/div/input').type('230 nguyễn công hoan');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[2]').click();\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/div[1]/div[2]/p[1]').contains('230 Nguyễn Công Hoan');",
+              "err": {},
+              "uuid": "f3593655-53bf-4172-bd8d-f6906411d925",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check search 'Case coffee'",
+              "fullTitle": "Searching Visits the map4d website and check search 'Case coffee'",
+              "timedOut": null,
+              "duration": 4801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/div/input').type('Case coffee');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[2]').click();\ncy.wait(500);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/div').contains('Không tìm thấy kết quả \"Case coffee\" ở khu vực hiện tại');",
+              "err": {},
+              "uuid": "873bf089-5d3d-4ea8-9729-eb0f8157e7ee",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check search '230 hàm NGHI'",
+              "fullTitle": "Searching Visits the map4d website and check search '230 hàm NGHI'",
+              "timedOut": null,
+              "duration": 6436,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/div/input').type('230 hàm NGHI');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[2]').click();\ncy.wait(500);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/div[1]/div[2]/p[1]').contains('230 P. Hàm Nghi');",
+              "err": {},
+              "uuid": "fdafc292-3665-4e7c-a6cf-b07eddbee01e",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check search '230 ham nghi'",
+              "fullTitle": "Searching Visits the map4d website and check search '230 ham nghi'",
+              "timedOut": null,
+              "duration": 4844,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/div/input').type('230 ham nghi');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[2]').click();\ncy.wait(500);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/div[1]/div[2]/p[1]').contains('230 P. Hàm Nghi');",
+              "err": {},
+              "uuid": "d5c667e8-a1a4-47b6-a73f-3b51d0150b23",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check search ' 230 ham nghi '",
+              "fullTitle": "Searching Visits the map4d website and check search ' 230 ham nghi '",
+              "timedOut": null,
+              "duration": 4840,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/div/input').type(' 230 ham nghi ');\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[2]').click();\ncy.wait(500);\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/div[1]/div[2]/p[1]').contains('230 P. Hàm Nghi');",
+              "err": {},
+              "uuid": "1355d369-f86d-48d8-8674-31be6745aeeb",
+              "parentUUID": "c2673d13-e038-4f7d-a73a-744b6e47fe9e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e8639159-d079-4d33-9605-2b451fd4b5c7",
+            "f3593655-53bf-4172-bd8d-f6906411d925",
+            "873bf089-5d3d-4ea8-9729-eb0f8157e7ee",
+            "fdafc292-3665-4e7c-a6cf-b07eddbee01e",
+            "d5c667e8-a1a4-47b6-a73f-3b51d0150b23",
+            "1355d369-f86d-48d8-8674-31be6745aeeb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 34004,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-05-01T15:35:13.285Z",
+    "end": "2022-05-01T15:35:37.038Z",
+    "duration": 23753,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f506c587-0080-4186-bbc6-6929d083ceb8",
+      "title": "",
+      "fullFile": "cypress\\integration\\direct\\index.spec.js",
+      "file": "cypress\\integration\\direct\\index.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82288cb6-4c35-4318-ba37-66f1e2905822",
+          "title": "Directing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Visits the map4d website and check it done",
+              "fullTitle": "Directing Visits the map4d website and check it done",
+              "timedOut": null,
+              "duration": 7700,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.contains('Đăng nhập');",
+              "err": {},
+              "uuid": "45334be3-06b2-4150-9c8a-98598930d71f",
+              "parentUUID": "82288cb6-4c35-4318-ba37-66f1e2905822",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check direct button",
+              "fullTitle": "Directing Visits the map4d website and check direct button",
+              "timedOut": null,
+              "duration": 5075,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[3]').click();\ncy.contains('Tìm kiếm');",
+              "err": {},
+              "uuid": "e945e268-6a14-4811-a5ce-cacba0c98a45",
+              "parentUUID": "82288cb6-4c35-4318-ba37-66f1e2905822",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Visits the map4d website and check direct button have distance",
+              "fullTitle": "Directing Visits the map4d website and check direct button have distance",
+              "timedOut": null,
+              "duration": 7203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://map.map4d.vn/\");\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div[1]/div[1]/button[3]').click();\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div/div[2]/div[1]/div/div/div/div/div').type('230 Hàm Nghi');\ncy.wait(500);\ncy.xpath('/html/body/div[2]/div/ul/li[1]').click();\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div/div/div/div').type('459 Tôn đức thắng');\ncy.wait(500);\ncy.xpath('/html/body/div[2]/div/ul/li[1]').click();\ncy.xpath('//*[@id=\"root\"]/div/div[2]/div/div/ul/div[1]/div[2]/div[1]/p').contains('Tuyến đường nhanh nhất');",
+              "err": {},
+              "uuid": "5a6eb50a-984e-4e06-9c23-357f2a9ffd9e",
+              "parentUUID": "82288cb6-4c35-4318-ba37-66f1e2905822",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "45334be3-06b2-4150-9c8a-98598930d71f",
+            "e945e268-6a14-4811-a5ce-cacba0c98a45",
+            "5a6eb50a-984e-4e06-9c23-357f2a9ffd9e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19978,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.1.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.1.0"
+    }
+  }
+}
